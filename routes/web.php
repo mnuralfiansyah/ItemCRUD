@@ -15,4 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('itemCRUD', 'ItemCRUDController');
+//must be auth to open /itemCRUD
+Route::group(['middleware'=> 'auth'], function(){
+  Route::resource('itemCRUD', 'ItemCRUDController');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('/got', [
+  'middleware'=> ['auth'],
+  'uses'=> function(){
+    echo "You are allowed to view this page!";
+  }
+]);
