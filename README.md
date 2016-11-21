@@ -1,4 +1,4 @@
-Learn CRUD using Laravel 5.3.23
+Learn CRUD and Auth using Laravel 5.3.23
 ---
 - clone this repo using `git clone https://github.com/egin10/ItemCRUD.git`
 - install packages from composer.json using `composer install`
