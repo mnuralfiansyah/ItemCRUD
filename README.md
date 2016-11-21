@@ -1,7 +1,7 @@
 Learn CRUD using Laravel 5.3.23
 ---
 - clone this repo using `git clone https://github.com/egin10/ItemCRUD.git`
-- install packages in composer.json using `composer install`
+- install packages from composer.json using `composer install`
 - copy .env.example to .env
 - edit file .env DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
